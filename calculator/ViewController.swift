@@ -93,33 +93,41 @@ class ViewController: UIViewController {
         textNumber = textNumber!/100.0
         resultShow.text = String(textNumber!)
         newOperation = true
-       
-       
+    
     }
     
     @IBAction func btnDivide(_ sender: Any) {
-        op="/"
-        number1 = Double(resultShow.text!)
-        newOperation = true
+        if !newOperation{
+            op="/"
+            number1 = Double(resultShow.text!)
+            newOperation = true
+        }
     }
     
     
     @IBAction func btnMultiply(_ sender: Any) {
-        op="*"
-        number1 = Double(resultShow.text!)
-        newOperation = true
+        if !newOperation{
+            op="*"
+            number1 = Double(resultShow.text!)
+            newOperation = true
+        }
+       
     }
     
     @IBAction func btnPlus(_ sender: Any) {
-        op="+"
-        number1 = Double(resultShow.text!)
-        newOperation = true
+        if !newOperation{
+            op="+"
+            number1 = Double(resultShow.text!)
+            newOperation = true
+        }
     }
     
     @IBAction func btnMinus(_ sender: Any) {
-        op="-"
-        number1 = Double(resultShow.text!)
-        newOperation = true
+        if !newOperation{
+            op="-"
+            number1 = Double(resultShow.text!)
+            newOperation = true
+        }
     }
     
     @IBAction func btnEqual(_ sender: Any) {
